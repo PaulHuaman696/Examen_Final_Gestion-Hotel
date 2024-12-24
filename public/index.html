@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Hotel</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <h1>Gestión de Hotel</h1>
+
+    <div id="content">
+        <div class="title-more-button">
+            <h2>Listado de Habitaciones</h2>
+            <!-- Botón de Nueva Habitación -->
+            <button id="new-room-button" onclick="window.location.href='/add-room.html'">+ New</button>
+        </div>
+        <table id="room-table">
+            <thead>
+                <tr>
+                    <th>Número</th>
+                    <th>Tipo</th>
+                    <th>Precio</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody >
+                <!-- Las filas se llenarán dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Nueva sección: Selección de habitación -->
+    <div id="actions">
+        <h2>Acciones</h2>
+        <label for="room-selector">Selecciona una habitación:</label>
+        <select id="room-selector">
+            <!-- Las opciones se llenarán dinámicamente -->
+        </select>
+        <div class="buttons">
+            <button id="pay-button">Pagar</button>
+            <button id="reserve-button">Reservar</button>
+            <!-- Botón para cambiar el estado a "Disponible" -->
+            <button id="available-button">Volver a Disponible</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
